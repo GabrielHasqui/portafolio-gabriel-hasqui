@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio web de Gabriel Leonardo Hasqui Ortega, estudiante de Ingenieria en Software."
+    />
+    <meta name="author" content="Gabriel Leonardo Hasqui Ortega" />
+    <title>Gabriel Hasqui | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">GH</span>
+          <span class="brand-text">/hasqui</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+
+        <ul class="nav-list" id="menu-principal">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#habilidades">Skills</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#design-system">Design System</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="hero-section" id="inicio" aria-labelledby="titulo-principal">
+        <div class="section-container hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Software Engineering Student</p>
+            <h1 id="titulo-principal">Gabriel Leonardo Hasqui Ortega</h1>
+            <p class="hero-role">Estudiante de Ingenieria en Software</p>
+            <p class="hero-description">
+              Desarrollo soluciones tecnologicas enfocadas en aplicaciones web,
+              APIs, analisis de datos e inteligencia artificial.
+            </p>
+
+            <div class="hero-actions" aria-label="Acciones principales">
+              <a class="button button-primary" href="#proyectos">Ver proyectos</a>
+              <a class="button button-secondary" href="#contacto">Contactarme</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/GabrielHasqui"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Resumen del portafolio">
+              <li>
+                <strong>04</strong>
+                <span>Proyectos</span>
+              </li>
+              <li>
+                <strong>18+</strong>
+                <span>Tecnologias</span>
+              </li>
+              <li>
+                <strong>05</strong>
+                <span>Areas</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero-aside" aria-label="Resumen profesional">
+            <figure class="profile-figure">
+              <img
+                src="img/foto_perfil.png"
+                alt="Retrato profesional de Gabriel Hasqui"
+                width="280"
+                height="280"
+              />
+              <figcaption>Backend / Data / AI</figcaption>
+            </figure>
+
+            <div class="terminal-card" aria-label="Ficha rapida">
+              <p>&gt; Gabriel Hasqui</p>
+              <p>&gt; Software Engineering Student</p>
+                <p>&gt; Backend / Frontend / Data / AI</p>
+              <p>&gt; Guayaquil, Ecuador</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <div class="section-container">
+          <header class="section-heading">
+            <p class="section-index">01 // About</p>
+            <h2 id="titulo-sobre-mi">Sobre mi</h2>
+          </header>
+
+          <div class="about-layout">
+            <div class="about-text">
+              <p>
+                Gabriel Leonardo Hasqui Ortega es estudiante de Ingenieria en
+                Software en la Universidad Estatal de Milagro. Su perfil esta
+                orientado a la mejora de procesos, el analisis de datos y la
+                aplicacion de herramientas tecnologicas para resolver problemas
+                reales.
+              </p>
+              <p>
+                Cuenta con interes academico en desarrollo backend, APIs REST,
+                bases de datos, visualizacion y analisis de datos, ademas de
+                proyectos relacionados con inteligencia artificial y Machine
+                Learning.
+              </p>
+            </div>
+
+            <div class="about-cards">
+              <article class="info-card">
+                <h3>Perfil academico</h3>
+                <ul>
+                  <li>Ingenieria en Software</li>
+                  <li>Universidad Estatal de Milagro (UNEMI)</li>
+                  <li>Interes en soluciones tecnologicas</li>
+                </ul>
+              </article>
+
+              <article class="info-card">
+                <h3>Enfoque profesional</h3>
+                <ul>
+                  <li>Desarrollo web</li>
+                  <li>Backend y APIs REST</li>
+                  <li>Datos y Business Intelligence</li>
+                  <li>Inteligencia artificial y Machine Learning</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="habilidades" aria-labelledby="titulo-habilidades">
+        <div class="section-container">
+          <header class="section-heading">
+            <p class="section-index">02 // Skills</p>
+            <h2 id="titulo-habilidades">Habilidades</h2>
+            <p>
+              Tecnologias organizadas por categoria. El nivel indicado es
+              cualitativo y honesto, sin porcentajes inventados.
+            </p>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li><span>Python</span><strong>Intermedio</strong></li>
+                <li><span>Django</span><strong>Intermedio</strong></li>
+                <li><span>FastAPI</span><strong>Intermedio</strong></li>
+                <li><span>APIs REST</span><strong>Intermedio</strong></li>
+                <li><span>Node.js</span><strong>Principiante</strong></li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li><span>HTML5</span><strong>Intermedio</strong></li>
+                <li><span>CSS3</span><strong>Intermedio</strong></li>
+                <li><span>JavaScript</span><strong>Intermedio</strong></li>
+                <li><span>React</span><strong>Intermedio</strong></li>
+                <li><span>Vite</span><strong>Principiante</strong></li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Bases de datos</h3>
+              <ul>
+                <li><span>SQL</span><strong>Intermedio</strong></li>
+                <li><span>PostgreSQL</span><strong>Principiante</strong></li>
+                <li><span>SQLite</span><strong>Intermedio</strong></li>
+                <li><span>MongoDB</span><strong>Principiante</strong></li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Datos e IA</h3>
+              <ul>
+                <li><span>Pandas</span><strong>Intermedio</strong></li>
+                <li><span>Scikit-learn</span><strong>Intermedio</strong></li>
+                <li><span>Jupyter Notebook</span><strong>Intermedio</strong></li>
+                <li><span>Machine Learning</span><strong>Intermedio</strong></li>
+                <li><span>Power BI</span><strong>Principiante</strong></li>
+                <li><span>Power Query</span><strong>Principiante</strong></li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Herramientas</h3>
+              <ul>
+                <li><span>Git</span><strong>Intermedio</strong></li>
+                <li><span>GitHub</span><strong>Intermedio</strong></li>
+                <li><span>Postman</span><strong>Intermedio</strong></li>
+                <li><span>VS Code</span><strong>Intermedio</strong></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proyectos" aria-labelledby="titulo-proyectos">
+        <div class="section-container">
+          <header class="section-heading">
+            <p class="section-index">03 // Work</p>
+            <h2 id="titulo-proyectos">Proyectos destacados</h2>
+            <p>
+              Seleccion de proyectos academicos y propuestas en desarrollo.
+              Los filtros permitiran explorarlos por area con JavaScript.
+            </p>
+          </header>
+
+          <div class="project-filters" role="group" aria-label="Filtrar proyectos">
+            <button type="button" class="filter-button is-active" data-filter="todos">
+              Todos
+            </button>
+            <button type="button" class="filter-button" data-filter="backend">
+              Backend
+            </button>
+            <button type="button" class="filter-button" data-filter="frontend">
+              Frontend
+            </button>
+            <button type="button" class="filter-button" data-filter="data">
+              Data
+            </button>
+            <button type="button" class="filter-button" data-filter="ia">
+              IA
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-category="backend data">
+              <figure>
+                <img
+                  src="img/guios_plus.png"
+                  alt="Captura de la plataforma GUIOSS PLUS"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-code">PROJECT_01</p>
+                <h3>GUIOSS PLUS</h3>
+                <p>
+                  Plataforma web en Django para evaluar la adopcion de software
+                  libre mediante metodologia GUIOS, factores, subfactores,
+                  analisis FODA, recomendaciones e historial de resultados.
+                </p>
+                <p><strong>Problema:</strong> Evaluar alternativas de software libre requiere criterios, evidencia y trazabilidad.</p>
+                <p><strong>Solucion:</strong> Aplicacion web con evaluaciones, roles, evidencia bibliografica, recomendaciones e informes PDF.</p>
+                <ul class="tag-list" aria-label="Tecnologias usadas">
+                  <li>Django</li>
+                  <li>Python</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <div class="project-actions">
+                  <button type="button" class="button button-primary project-detail-button">
+                    Ver mas
+                  </button>
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/GabrielHasqui/GUIOSS_PLUS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="backend ia">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=500&fit=crop&auto=format"
+                  alt="Campo de cultivo visto desde arriba"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-code">PROJECT_02</p>
+                <h3>API de Recomendacion de Cultivos</h3>
+                <p>
+                  API REST con FastAPI que recomienda cultivos a partir de
+                  variables de suelo y clima, integrando un modelo de Machine
+                  Learning.
+                </p>
+                <p><strong>Problema:</strong> Elegir el cultivo adecuado depende de multiples variables agricolas dificiles de evaluar manualmente.</p>
+                <p><strong>Solucion:</strong> Servicio backend que devuelve recomendaciones segun las condiciones ingresadas.</p>
+                <ul class="tag-list" aria-label="Tecnologias usadas">
+                  <li>FastAPI</li>
+                  <li>Python</li>
+                  <li>Machine Learning</li>
+                  <li>APIs REST</li>
+                </ul>
+                <div class="project-actions">
+                  <button type="button" class="button button-primary project-detail-button">
+                    Ver mas
+                  </button>
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/GabrielHasqui/api-recomendacion-cultivos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="frontend">
+              <figure>
+                <img
+                  src="img/Nutri_Go.png"
+                  alt="Captura de la landing page NutriGo Care"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-code">PROJECT_03</p>
+                <h3>NutriGo Care</h3>
+                <p>
+                  Landing page responsive en React y Vite para nutricion online
+                  personalizada, con secciones informativas, planes, FAQ y
+                  formulario conectado a WhatsApp.
+                </p>
+                <p><strong>Problema:</strong> Presentar servicios de nutricion digital de forma clara y orientada a conversion.</p>
+                <p><strong>Solucion:</strong> Interfaz responsive con componentes reutilizables, imagenes optimizadas y contacto directo por WhatsApp.</p>
+                <ul class="tag-list" aria-label="Tecnologias usadas">
+                  <li>React</li>
+                  <li>Vite</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+                <div class="project-actions">
+                  <button type="button" class="button button-primary project-detail-button">
+                    Ver mas
+                  </button>
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/GabrielHasqui/nutrigo-care"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="data ia">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&auto=format"
+                  alt="Panel con graficos de analisis de datos"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-content">
+                <p class="project-code">PROJECT_04</p>
+                <h3>Recomendacion de Cultivos ML</h3>
+                <p>
+                  Notebook de machine learning para entrenar y evaluar un
+                  modelo Random Forest que recomienda cultivos segun variables
+                  de suelo y clima.
+                </p>
+                <p><strong>Problema:</strong> Seleccionar cultivos requiere analizar nutrientes, temperatura, humedad, pH y lluvia.</p>
+                <p><strong>Solucion:</strong> Modelo de clasificacion con Random Forest sobre un dataset agricola balanceado.</p>
+                <ul class="tag-list" aria-label="Tecnologias usadas">
+                  <li>Python</li>
+                  <li>Jupyter Notebook</li>
+                  <li>Scikit-learn</li>
+                  <li>Random Forest</li>
+                  <li>Machine Learning</li>
+                </ul>
+                <div class="project-actions">
+                  <button type="button" class="button button-primary project-detail-button">
+                    Ver mas
+                  </button>
+                  <a
+                    class="button button-secondary"
+                    href="https://github.com/GabrielHasqui/recomendacion-cultivos-ml-random-forest-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="design-system" aria-labelledby="titulo-design-system">
+        <div class="section-container">
+          <header class="section-heading">
+            <p class="section-index">04 // System</p>
+            <h2 id="titulo-design-system">Design System / Componentes</h2>
+            <p>
+              Tokens y componentes que se usaran en todo el sitio para mantener
+              un diseno consistente.
+            </p>
+          </header>
+
+          <article class="design-block" aria-labelledby="titulo-colores">
+            <h3 id="titulo-colores">Colores</h3>
+            <ul class="color-list">
+              <li><span class="color-swatch" data-color="#000000"></span>Primary / #000000</li>
+              <li><span class="color-swatch" data-color="#ffffff"></span>Background / #ffffff</li>
+              <li><span class="color-swatch" data-color="#f2f2f2"></span>Surface / #f2f2f2</li>
+              <li><span class="color-swatch" data-color="#666666"></span>Muted / #666666</li>
+              <li><span class="color-swatch" data-color="#0a8f3c"></span>Accent / #0a8f3c</li>
+            </ul>
+          </article>
+
+          <article class="design-block" aria-labelledby="titulo-tipografia">
+            <h3 id="titulo-tipografia">Tipografia</h3>
+            <div class="type-samples">
+              <h1>H1 - Titulo principal</h1>
+              <h2>H2 - Titulo de seccion</h2>
+              <h3>H3 - Titulo de componente</h3>
+              <p>Parrafo - Texto de contenido para lectura comoda.</p>
+              <p class="muted-text">Texto secundario para informacion complementaria.</p>
+              <a href="#design-system">Enlace de ejemplo</a>
+            </div>
+          </article>
+
+          <article class="design-block" aria-labelledby="titulo-espaciado">
+            <h3 id="titulo-espaciado">Espaciado</h3>
+            <ul class="spacing-list">
+              <li><strong>xs</strong> 0.25rem</li>
+              <li><strong>sm</strong> 0.5rem</li>
+              <li><strong>md</strong> 1rem</li>
+              <li><strong>lg</strong> 2rem</li>
+              <li><strong>xl</strong> 4rem</li>
+            </ul>
+          </article>
+
+          <article class="design-block" aria-labelledby="titulo-componentes">
+            <h3 id="titulo-componentes">Componentes</h3>
+            <div class="component-preview">
+              <a class="button button-primary" href="#contacto">Boton primario</a>
+              <a class="button button-secondary" href="#proyectos">Boton secundario</a>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <input type="text" aria-label="Input de ejemplo" placeholder="Nombre" />
+              <textarea aria-label="Textarea de ejemplo" placeholder="Mensaje"></textarea>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto" aria-labelledby="titulo-contacto">
+        <div class="section-container">
+          <header class="section-heading">
+            <p class="section-index">05 // Contact</p>
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p>
+              Disponible para oportunidades academicas, practicas y proyectos de
+              desarrollo de software.
+            </p>
+          </header>
+
+          <div class="contact-layout">
+            <aside class="contact-info" aria-label="Informacion de contacto">
+              <ul>
+                <li>
+                  <a href="mailto:GabrielHasquiOrtega@outlook.com">
+                    GabrielHasquiOrtega@outlook.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/GabrielHasqui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/gabrielhasqui/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+
+              <div class="terminal-card">
+                <p>&gt; status: abierto a oportunidades</p>
+                <p>&gt; ubicacion: Guayaquil, Ecuador</p>
+              </div>
+            </aside>
+
+            <form class="contact-form" action="#" method="post" novalidate>
+              <div class="form-field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="form-field">
+                <label for="correo">Correo electronico</label>
+                <input id="correo" name="correo" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="form-field">
+                <label for="asunto">Asunto</label>
+                <input id="asunto" name="asunto" type="text" required />
+              </div>
+
+              <div class="form-field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+              </div>
+
+              <button class="button button-primary" type="submit">Enviar mensaje</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container footer-content">
+        <p>&copy; 2026 Gabriel Hasqui. Portafolio construido con HTML, CSS y JavaScript.</p>
+        <ul aria-label="Redes profesionales">
+          <li>
+            <a
+              href="https://github.com/GabrielHasqui"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gabrielhasqui/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li><a href="mailto:GabrielHasquiOrtega@outlook.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Cerrar detalle">Cerrar</button>
+      <h2 id="dialog-title">Detalle del proyecto</h2>
+      <div class="dialog-content"></div>
+    </dialog>
+
+    <button class="back-to-top" type="button" aria-label="Volver al inicio">
+      Arriba
+    </button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
