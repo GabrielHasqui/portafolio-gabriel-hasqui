@@ -9,6 +9,10 @@
     />
     <meta name="author" content="Gabriel Leonardo Hasqui Ortega" />
     <title>Gabriel Hasqui | Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -69,7 +73,7 @@
 
             <ul class="hero-stats" aria-label="Resumen del portafolio">
               <li>
-                <strong>04</strong>
+                <strong>03</strong>
                 <span>Proyectos</span>
               </li>
               <li>
@@ -233,6 +237,9 @@
           </header>
 
           <div class="project-filters" role="group" aria-label="Filtrar proyectos">
+            <span class="filter-icon" aria-hidden="true">
+              <i class="fa-solid fa-filter"></i>
+            </span>
             <button type="button" class="filter-button is-active" data-filter="todos">
               Todos
             </button>
@@ -248,12 +255,17 @@
             <button type="button" class="filter-button" data-filter="ia">
               IA
             </button>
+            <span class="project-count">03 / 03</span>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card" data-category="backend data">
+            <article
+              class="project-card"
+              data-category="backend data"
+            >
               <figure>
                 <img
+                  class="project-image-full"
                   src="img/guios_plus.png"
                   alt="Captura de la plataforma GUIOSS PLUS"
                   width="800"
@@ -262,15 +274,26 @@
                 />
               </figure>
               <div class="project-content">
-                <p class="project-code">PROJECT_01</p>
+                <div class="project-meta">
+                  <p class="project-code">PROJECT_01</p>
+                  <span class="tag">Proyecto academico</span>
+                </div>
                 <h3>GUIOSS PLUS</h3>
                 <p>
                   Plataforma web en Django para evaluar la adopcion de software
                   libre mediante metodologia GUIOS, factores, subfactores,
                   analisis FODA, recomendaciones e historial de resultados.
                 </p>
-                <p><strong>Problema:</strong> Evaluar alternativas de software libre requiere criterios, evidencia y trazabilidad.</p>
-                <p><strong>Solucion:</strong> Aplicacion web con evaluaciones, roles, evidencia bibliografica, recomendaciones e informes PDF.</p>
+                <div class="project-details">
+                  <p>
+                    <strong>Problema:</strong> evaluar alternativas de software
+                    libre requiere criterios, evidencia y trazabilidad.
+                  </p>
+                  <p>
+                    <strong>Solucion:</strong> aplicacion web con evaluaciones,
+                    roles, evidencia bibliografica, recomendaciones e informes PDF.
+                  </p>
+                </div>
                 <ul class="tag-list" aria-label="Tecnologias usadas">
                   <li>Django</li>
                   <li>Python</li>
@@ -280,9 +303,6 @@
                   <li>PostgreSQL</li>
                 </ul>
                 <div class="project-actions">
-                  <button type="button" class="button button-primary project-detail-button">
-                    Ver mas
-                  </button>
                   <a
                     class="button button-secondary"
                     href="https://github.com/GabrielHasqui/GUIOSS_PLUS"
@@ -295,9 +315,13 @@
               </div>
             </article>
 
-            <article class="project-card" data-category="backend ia">
-              <figure>
+            <article
+              class="project-card"
+              data-category="backend ia"
+            >
+              <figure class="project-figure-small">
                 <img
+                  class="project-image-api"
                   src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=500&fit=crop&auto=format"
                   alt="Campo de cultivo visto desde arriba"
                   width="800"
@@ -306,15 +330,26 @@
                 />
               </figure>
               <div class="project-content">
-                <p class="project-code">PROJECT_02</p>
+                <div class="project-meta">
+                  <p class="project-code">PROJECT_02</p>
+                  <span class="tag">Backend e IA</span>
+                </div>
                 <h3>API de Recomendacion de Cultivos</h3>
                 <p>
                   API REST con FastAPI que recomienda cultivos a partir de
                   variables de suelo y clima, integrando un modelo de Machine
                   Learning.
                 </p>
-                <p><strong>Problema:</strong> Elegir el cultivo adecuado depende de multiples variables agricolas dificiles de evaluar manualmente.</p>
-                <p><strong>Solucion:</strong> Servicio backend que devuelve recomendaciones segun las condiciones ingresadas.</p>
+                <div class="project-details">
+                  <p>
+                    <strong>Problema:</strong> elegir el cultivo adecuado depende
+                    de multiples variables agricolas dificiles de evaluar manualmente.
+                  </p>
+                  <p>
+                    <strong>Solucion:</strong> servicio backend que devuelve
+                    recomendaciones segun las condiciones ingresadas.
+                  </p>
+                </div>
                 <ul class="tag-list" aria-label="Tecnologias usadas">
                   <li>FastAPI</li>
                   <li>Python</li>
@@ -322,9 +357,6 @@
                   <li>APIs REST</li>
                 </ul>
                 <div class="project-actions">
-                  <button type="button" class="button button-primary project-detail-button">
-                    Ver mas
-                  </button>
                   <a
                     class="button button-secondary"
                     href="https://github.com/GabrielHasqui/api-recomendacion-cultivos"
@@ -337,9 +369,13 @@
               </div>
             </article>
 
-            <article class="project-card" data-category="frontend">
+            <article
+              class="project-card"
+              data-category="frontend"
+            >
               <figure>
                 <img
+                  class="project-image-full"
                   src="img/Nutri_Go.png"
                   alt="Captura de la landing page NutriGo Care"
                   width="800"
@@ -348,15 +384,26 @@
                 />
               </figure>
               <div class="project-content">
-                <p class="project-code">PROJECT_03</p>
+                <div class="project-meta">
+                  <p class="project-code">PROJECT_03</p>
+                  <span class="tag">Frontend</span>
+                </div>
                 <h3>NutriGo Care</h3>
                 <p>
                   Landing page responsive en React y Vite para nutricion online
                   personalizada, con secciones informativas, planes, FAQ y
                   formulario conectado a WhatsApp.
                 </p>
-                <p><strong>Problema:</strong> Presentar servicios de nutricion digital de forma clara y orientada a conversion.</p>
-                <p><strong>Solucion:</strong> Interfaz responsive con componentes reutilizables, imagenes optimizadas y contacto directo por WhatsApp.</p>
+                <div class="project-details">
+                  <p>
+                    <strong>Problema:</strong> presentar servicios de nutricion
+                    digital de forma clara y orientada a conversion.
+                  </p>
+                  <p>
+                    <strong>Solucion:</strong> interfaz responsive con componentes
+                    reutilizables, imagenes optimizadas y contacto directo por WhatsApp.
+                  </p>
+                </div>
                 <ul class="tag-list" aria-label="Tecnologias usadas">
                   <li>React</li>
                   <li>Vite</li>
@@ -365,9 +412,6 @@
                   <li>HTML</li>
                 </ul>
                 <div class="project-actions">
-                  <button type="button" class="button button-primary project-detail-button">
-                    Ver mas
-                  </button>
                   <a
                     class="button button-secondary"
                     href="https://github.com/GabrielHasqui/nutrigo-care"
@@ -380,48 +424,6 @@
               </div>
             </article>
 
-            <article class="project-card" data-category="data ia">
-              <figure>
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&auto=format"
-                  alt="Panel con graficos de analisis de datos"
-                  width="800"
-                  height="500"
-                  loading="lazy"
-                />
-              </figure>
-              <div class="project-content">
-                <p class="project-code">PROJECT_04</p>
-                <h3>Recomendacion de Cultivos ML</h3>
-                <p>
-                  Notebook de machine learning para entrenar y evaluar un
-                  modelo Random Forest que recomienda cultivos segun variables
-                  de suelo y clima.
-                </p>
-                <p><strong>Problema:</strong> Seleccionar cultivos requiere analizar nutrientes, temperatura, humedad, pH y lluvia.</p>
-                <p><strong>Solucion:</strong> Modelo de clasificacion con Random Forest sobre un dataset agricola balanceado.</p>
-                <ul class="tag-list" aria-label="Tecnologias usadas">
-                  <li>Python</li>
-                  <li>Jupyter Notebook</li>
-                  <li>Scikit-learn</li>
-                  <li>Random Forest</li>
-                  <li>Machine Learning</li>
-                </ul>
-                <div class="project-actions">
-                  <button type="button" class="button button-primary project-detail-button">
-                    Ver mas
-                  </button>
-                  <a
-                    class="button button-secondary"
-                    href="https://github.com/GabrielHasqui/recomendacion-cultivos-ml-random-forest-"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -441,8 +443,10 @@
             <h3 id="titulo-colores">Colores</h3>
             <ul class="color-list">
               <li><span class="color-swatch" data-color="#000000"></span>Primary / #000000</li>
+              <li><span class="color-swatch" data-color="#ffffff"></span>Secondary / #ffffff</li>
               <li><span class="color-swatch" data-color="#ffffff"></span>Background / #ffffff</li>
               <li><span class="color-swatch" data-color="#f2f2f2"></span>Surface / #f2f2f2</li>
+              <li><span class="color-swatch" data-color="#000000"></span>Text / #000000</li>
               <li><span class="color-swatch" data-color="#666666"></span>Muted / #666666</li>
               <li><span class="color-swatch" data-color="#0a8f3c"></span>Accent / #0a8f3c</li>
             </ul>
@@ -473,13 +477,63 @@
 
           <article class="design-block" aria-labelledby="titulo-componentes">
             <h3 id="titulo-componentes">Componentes</h3>
-            <div class="component-preview">
-              <a class="button button-primary" href="#contacto">Boton primario</a>
-              <a class="button button-secondary" href="#proyectos">Boton secundario</a>
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <input type="text" aria-label="Input de ejemplo" placeholder="Nombre" />
-              <textarea aria-label="Textarea de ejemplo" placeholder="Mensaje"></textarea>
+            <div class="component-grid">
+              <div class="component-card">
+                <p>Botones</p>
+                <div class="component-preview">
+                  <a class="button button-primary" href="#contacto">Primario</a>
+                  <a class="button button-secondary" href="#proyectos">Secundario</a>
+                </div>
+              </div>
+
+              <div class="component-card">
+                <p>Tags</p>
+                <div class="component-preview">
+                  <span class="tag">Python</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">React</span>
+                </div>
+              </div>
+
+              <div class="component-card">
+                <p>Input / Textarea</p>
+                <input type="text" aria-label="Input de ejemplo" placeholder="Nombre" />
+                <textarea aria-label="Textarea de ejemplo" placeholder="Mensaje"></textarea>
+              </div>
+
+              <div class="terminal-card component-terminal">
+                <p>&gt; component: panel-terminal</p>
+                <p>&gt; status: ok</p>
+              </div>
+
+              <nav class="component-card navbar-sample" aria-label="Navbar de ejemplo">
+                <p>Navbar</p>
+                <div class="navbar-preview">
+                  <span class="brand-mark">GH</span>
+                  <a href="#inicio">Inicio</a>
+                  <a href="#proyectos">Proyectos</a>
+                  <a href="#contacto">Contacto</a>
+                </div>
+              </nav>
+
+              <article class="project-card component-project-card">
+                <div class="project-content">
+                  <div class="project-meta">
+                    <p class="project-code">CARD</p>
+                    <span class="tag">Componente</span>
+                  </div>
+                  <h3>Card de proyecto</h3>
+                  <p>
+                    Ejemplo del componente usado para presentar proyectos,
+                    tecnologias y enlaces.
+                  </p>
+                  <ul class="tag-list" aria-label="Tecnologias de ejemplo">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </article>
             </div>
           </article>
         </div>
@@ -498,35 +552,38 @@
 
           <div class="contact-layout">
             <aside class="contact-info" aria-label="Informacion de contacto">
-              <ul>
-                <li>
-                  <a href="mailto:GabrielHasquiOrtega@outlook.com">
-                    GabrielHasquiOrtega@outlook.com
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/GabrielHasqui"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/gabrielhasqui/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
+              <a class="contact-link" href="mailto:GabrielHasquiOrtega@outlook.com">
+                <span class="contact-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <strong>GabrielHasquiOrtega@outlook.com</strong>
+              </a>
+              <a
+                class="contact-link"
+                href="https://github.com/GabrielHasqui"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-icon" aria-hidden="true">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <strong>GitHub</strong>
+              </a>
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/gabrielhasqui/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-icon" aria-hidden="true">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+                <strong>LinkedIn</strong>
+              </a>
 
               <div class="terminal-card">
                 <p>&gt; status: abierto a oportunidades</p>
-                <p>&gt; ubicacion: Guayaquil, Ecuador</p>
+                <p>&gt; ubicacion: Guayaquil, Ecuador<span class="cursor">_</span></p>
               </div>
             </aside>
 
@@ -551,7 +608,10 @@
                 <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
               </div>
 
-              <button class="button button-primary" type="submit">Enviar mensaje</button>
+              <button class="button button-primary contact-submit" type="submit">
+                Enviar mensaje
+                <span aria-hidden="true">-&gt;</span>
+              </button>
               <p class="form-status" role="status" aria-live="polite"></p>
             </form>
           </div>
@@ -561,36 +621,42 @@
 
     <footer class="site-footer">
       <div class="section-container footer-content">
-        <p>&copy; 2026 Gabriel Hasqui. Portafolio construido con HTML, CSS y JavaScript.</p>
+        <p>&copy; 2026 Gabriel Hasqui.</p>
         <ul aria-label="Redes profesionales">
           <li>
             <a
+              class="footer-icon"
               href="https://github.com/GabrielHasqui"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              GitHub
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a
+              class="footer-icon"
               href="https://www.linkedin.com/in/gabrielhasqui/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              LinkedIn
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
             </a>
           </li>
-          <li><a href="mailto:GabrielHasquiOrtega@outlook.com">Email</a></li>
+          <li>
+            <a
+              class="footer-icon"
+              href="mailto:GabrielHasquiOrtega@outlook.com"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
-
-    <dialog class="project-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" type="button" aria-label="Cerrar detalle">Cerrar</button>
-      <h2 id="dialog-title">Detalle del proyecto</h2>
-      <div class="dialog-content"></div>
-    </dialog>
 
     <button class="back-to-top" type="button" aria-label="Volver al inicio">
       Arriba
