@@ -22,7 +22,6 @@ Pages.
 - [Secciones del sitio](#secciones-del-sitio)
 - [Funcionalidades JavaScript](#funcionalidades-javascript)
 - [Como ejecutar el proyecto](#como-ejecutar-el-proyecto)
-- [Publicacion con GitHub Pages](#publicacion-con-github-pages)
 - [Autor](#autor)
 
 ## Caracteristicas
@@ -98,12 +97,6 @@ Luego abre en el navegador:
 ```text
 http://localhost:5500
 ```
-
-## Publicacion con GitHub Pages
-
-El portafolio esta publicado en:
-
-[https://gabrielhasqui.github.io/portafolio-gabriel-hasqui/](https://gabrielhasqui.github.io/portafolio-gabriel-hasqui/)
 
 ## Autor
 
