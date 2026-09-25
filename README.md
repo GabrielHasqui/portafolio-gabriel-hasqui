@@ -9,13 +9,15 @@ El proyecto fue desarrollado con **HTML, CSS y JavaScript puro**, manteniendo un
 estructura simple, facil de entender y preparada para publicarse con GitHub
 Pages.
 
-![Vista principal del portafolio](img/captura-inicio.png)
+## Sitio publicado
+
+[Ver portafolio en GitHub Pages](https://gabrielhasqui.github.io/portafolio-gabriel-hasqui/)
 
 ## Tabla de contenido
 
+- [Sitio publicado](#sitio-publicado)
 - [Caracteristicas](#caracteristicas)
 - [Tecnologias](#tecnologias)
-- [Capturas](#capturas)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Secciones del sitio](#secciones-del-sitio)
 - [Funcionalidades JavaScript](#funcionalidades-javascript)
@@ -45,20 +47,6 @@ Pages.
 | Git / GitHub | Control de versiones y repositorio remoto |
 | GitHub Pages | Publicacion del portafolio |
 
-## Capturas
-
-### Vista principal
-
-![Seccion de inicio](img/captura-inicio.png)
-
-### GUIOSS PLUS
-
-![Captura de GUIOSS PLUS](img/guios_plus.png)
-
-### NutriGo Care
-
-![Captura de NutriGo Care](img/Nutri_Go.png)
-
 ## Estructura del proyecto
 
 ```text
@@ -73,8 +61,7 @@ portafolio/
 └── img/
     ├── foto_perfil.png
     ├── guios_plus.png
-    ├── Nutri_Go.png
-    └── captura-inicio.png
+    └── Nutri_Go.png
 ```
 
 ## Secciones del sitio
@@ -114,12 +101,9 @@ http://localhost:5500
 
 ## Publicacion con GitHub Pages
 
-1. Ir al repositorio en GitHub.
-2. Entrar en **Settings**.
-3. Abrir la seccion **Pages**.
-4. En **Branch**, seleccionar `main`.
-5. Guardar los cambios.
-6. Probar la URL publica generada por GitHub Pages.
+El portafolio esta publicado en:
+
+[https://gabrielhasqui.github.io/portafolio-gabriel-hasqui/](https://gabrielhasqui.github.io/portafolio-gabriel-hasqui/)
 
 ## Autor
 
