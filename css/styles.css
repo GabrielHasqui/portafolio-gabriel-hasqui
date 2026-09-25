@@ -274,9 +274,13 @@ h3 {
   box-shadow: 2px 2px 0 var(--color-line);
 }
 
-.button-primary,
-.filter-button.is-active {
+.button-primary {
   background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.filter-button.is-active {
+  background: var(--color-accent);
   color: var(--color-secondary);
 }
 
@@ -824,19 +828,23 @@ h3 {
 }
 
 .spacing-list li:nth-child(1)::after {
-  width: 0.25rem;
+  width: var(--space-xs);
 }
 
 .spacing-list li:nth-child(2)::after {
-  width: 0.5rem;
+  width: var(--space-sm);
 }
 
 .spacing-list li:nth-child(3)::after {
-  width: 1rem;
+  width: var(--space-md);
 }
 
 .spacing-list li:nth-child(4)::after {
-  width: 2rem;
+  width: var(--space-lg);
+}
+
+.spacing-list li:nth-child(5)::after {
+  width: var(--space-xl);
 }
 
 .component-preview {
@@ -1229,9 +1237,34 @@ h3 {
   }
 
   .button,
-  .filter-button,
-  .back-to-top {
+  .filter-button {
     width: 100%;
+  }
+
+  .project-filters {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.45rem;
+  }
+
+  .project-filters .filter-button {
+    width: auto;
+    min-height: 2.1rem;
+    padding: 0.45rem 0.55rem;
+    font-size: 0.45rem;
+    white-space: nowrap;
+  }
+
+  .filter-icon {
+    flex: 0 0 auto;
+  }
+
+  .filter-icon i {
+    font-size: 0.85rem;
+  }
+
+  .project-count {
+    display: none;
   }
 
   .hero-stats {
@@ -1240,9 +1273,31 @@ h3 {
 
   .skills-grid,
   .projects-grid,
-  .color-list,
   .component-grid {
     grid-template-columns: 1fr;
+  }
+
+  .color-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .color-list li {
+    min-height: 5.9rem;
+  }
+
+  .color-swatch {
+    height: 4rem;
+  }
+
+  .color-hex {
+    top: 2.55rem;
+    font-size: 0.42rem;
+  }
+
+  .color-name {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.72rem;
   }
 
   .project-content {
@@ -1255,8 +1310,11 @@ h3 {
   }
 
   .back-to-top {
-    left: 1rem;
     right: 1rem;
+    bottom: 1rem;
+    width: 2.5rem;
+    min-height: 2.5rem;
+    font-size: 0.82rem;
   }
 }
 
