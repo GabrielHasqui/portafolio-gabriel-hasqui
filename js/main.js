@@ -76,8 +76,18 @@ if (contactForm && formStatus) {
       return;
     }
 
+    if (/^\d+$/.test(subject)) {
+      formStatus.textContent = "El asunto no puede ser solo numeros.";
+      return;
+    }
+
     if (message.length < 20) {
       formStatus.textContent = "El mensaje debe tener al menos 20 caracteres.";
+      return;
+    }
+
+    if (/^\d+$/.test(message)) {
+      formStatus.textContent = "El mensaje no puede ser solo numeros.";
       return;
     }
 
