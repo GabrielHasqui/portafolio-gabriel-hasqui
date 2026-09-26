@@ -66,6 +66,11 @@ if (contactForm && formStatus) {
       return;
     }
 
+    if (/\d/.test(name)) {
+      formStatus.textContent = "El nombre no debe contener numeros.";
+      return;
+    }
+
     if (!email.includes("@") || !email.includes(".")) {
       formStatus.textContent = "Escribe un correo valido.";
       return;
