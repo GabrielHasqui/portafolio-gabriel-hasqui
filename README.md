@@ -17,6 +17,7 @@ Pages.
 
 - [Sitio publicado](#sitio-publicado)
 - [Caracteristicas](#caracteristicas)
+- [Capturas del resultado](#capturas-del-resultado)
 - [Tecnologias](#tecnologias)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Secciones del sitio](#secciones-del-sitio)
@@ -34,6 +35,20 @@ Pages.
 - Formulario de contacto con validacion basica.
 - Diseno responsive para computadora, tablet y telefono.
 - Codigo separado en archivos de HTML, CSS y JavaScript.
+
+## Capturas del resultado
+
+### Inicio
+
+![Vista de inicio del portafolio](img/captura-inicio.png)
+
+### Proyectos destacados
+
+![Seccion de proyectos destacados](img/captura-proyectos.png)
+
+### Contacto
+
+![Seccion de contacto](img/captura-contacto.png)
 
 ## Tecnologias
 
@@ -60,7 +75,10 @@ portafolio/
 └── img/
     ├── foto_perfil.png
     ├── guios_plus.png
-    └── Nutri_Go.png
+    ├── Nutri_Go.png
+    ├── captura-inicio.png
+    ├── captura-proyectos.png
+    └── captura-contacto.png
 ```
 
 ## Secciones del sitio
